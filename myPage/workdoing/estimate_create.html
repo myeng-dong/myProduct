@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/btn/btn.css">
+    <link rel="stylesheet" href="est_cre.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="main_top">
+                <div class="main_title">
+                        <h1>견적서 작성</h1>
+                        <h3>{$name} 님에게 보낼 견적서를 작성해주세요.</h3>
+                </div>
+                <div class="main_info">
+                    <div class="pic">
+                        <div class="profile"><img src="/iamge/기타/서류.jpg"></div>
+                        <div class="nickname"><h3>주차하마</h3></div>
+                    </div>
+                    <div class="info">
+                        <div class="info_top_p">
+                            <div class="info_top">
+                                <div class="job">
+                                    <h3>분야 : 기타/서류작업</h3>
+                                </div>
+                                <div class="local">
+                                    <h3>지역 : 울산광역시 남구</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hope">
+                            <div class="hope_list">
+                                <div class="hope_title"><h3>희망사항</h3></div>
+                                <div class="hope_text">
+                                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, libero. Id perspiciatis temporibus vel, cumque corporis, beatae ex atque, rerum recusandae ea doloribus provident voluptas totam facilis voluptates suscipit voluptatibus.</span>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <h4>희망날짜 : 가능한 빨리하고 싶어요.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_bot">
+                <div class="title">
+                    <div class="cost_title">예상 금액</div>
+                    <div class="text_title">상세 내용</div>
+                </div>
+                <div class="insert">
+                    <div class="cost_radio">
+                        <input type="radio" name="cost">총 비용
+                        <input type="radio" name="cost">시간 당
+                    </div>
+                    <div class="cost_bot">
+                        <input type="text" class="cost_insert" placeholder="금액을 입력하세요.">
+                    </div>
+                    <div class="text_bot">
+                        <input type="text" class="text_insert" placeholder="요청에 대한 상세견적 및 금액에 대해 말해주세요.">
+                    </div>
+                </div>
+            </div>
+                <button class="button borderbutton">견적서 보내기</button>
+
+        </div>
+    </div>
+    <script>
+        const $costIn = document.querySelector('.cost_insert');
+
+    </script>
+</body>
+</html>

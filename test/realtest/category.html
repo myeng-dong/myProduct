@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="category.css"> -->
+    <style>
+        /* #tab-1:checked ~ .tab label:nth-child(1),
+  #tab-2:checked ~ .tab label:nth-child(2),
+  #tab-3:checked ~ .tab label:nth-child(3),
+  #tab-4:checked ~ .tab label:nth-child(4) {
+      background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+  } */
+  .content > div {
+      display: none;
+  }
+  /* .main input[type=radio] {
+      display: none;
+  } */
+  
+  .tab label {
+      font-size: 18px;
+      cursor: pointer;
+      float: left;
+      width: 25%;
+      text-align: center;
+      padding: 15px 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      user-select: none;
+      -webkit-user-select: none;
+  }
+  #tab-1:checked ~ .content div:nth-child(1),
+  #tab-2:checked ~ .content div:nth-child(2),
+  #tab-3:checked ~ .content div:nth-child(3),
+  #tab-3:checked ~ .content div:nth-child(4),
+  #tab-3:checked ~ .content div:nth-child(5),
+  #tab-4:checked ~ .content div:nth-child(6)  {
+      display: block;
+  }
+  
+    </style>
+</head>
+<body>
+    <h1>목차 클릭시 div가 바뀌는 코드</h1><!--주석을 위한 h1이니 지워도됩니다-->
+<div class="main">
+  <input type="radio" id="tab-1" name="show" checked/>
+  <input type="radio" id="tab-2" name="show" />
+  <input type="radio" id="tab-3" name="show" />
+  <input type="radio" id="tab-4" name="show" />
+  <div class="tab">
+    <label for="tab-1">Concept</label>
+    <label for="tab-2">Color</label>
+    <label for="tab-3">Textile</label>
+    <label for="tab-4">Design</label>
+  </div>
+  <div class="content">
+    <div class="content-dis">
+      Concept의 body안 내용을 넣으세요.
+    </div>
+    <div class="content-dis">
+      Color의 body안 내용을 넣으세요.
+    </div>
+    <div class="content-dis">
+      Textile의 body안 내용을 넣으세요.
+    </div>
+    <div class="content-dis">
+      Design의 body안 내용을 넣으세요.
+    </div>
+    <div>
+    </div>
+</body>
+</html>

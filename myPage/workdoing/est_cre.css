@@ -1,0 +1,127 @@
+*{margin: 0; padding: 0;}
+        body{
+            background-color: rgba(0,0,0,.115);
+        }
+        .container{
+            display: grid;
+            grid-template-areas: ". main .";
+            grid-template-columns: 1fr 1024px 1fr;
+        }
+        .main{
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 16px;
+            margin: 100px 0 100px 0;
+        }
+        .main_top{
+            padding: 30px;
+        }
+        .main_top .main_title{
+            padding: 50px;
+        }
+        .main_top .main_title h1{
+            font-size: 3rem;
+        }
+        .main_top .main_title h3{
+            font-size: 1.5rem;
+            margin: 10px 0 0 30px;
+        }
+        .main_top .main_info{
+            display: flex;
+            position: relative;
+            border-bottom: 1px solid #f2f2f2;
+            margin-bottom: 20px;
+            padding: 0px 20px 20px 20px;
+        }
+        .main_top .main_info .pic .profile{
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .main_top .main_info .pic .nickname{
+            text-align: center;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+        .main_top .main_info .pic img{
+            width: 250px;
+            height: 200px;
+        }
+        .main_top .main_info .info .info_top_p{
+            display: flex;
+            justify-content: center;
+        }
+        .main_top .main_info .info .info_top{
+            display: flex;
+            justify-content: space-evenly;
+            width: 600px;
+            border-bottom: 1px solid #f2f2f2;
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+        }
+        .main_top .main_info .info .hope{
+            height: 140px;
+            padding-top: 10px;
+        }
+        .main_top .main_info .info .hope .hope_list{
+            margin-left: 20px;
+        }
+        .main_top .main_info .info .hope .hope_list .hope_title{
+            margin-bottom: 10px;
+        }
+        .main_top .main_info .info .hope .date{
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+        }
+        
+
+        .main_bot{
+            display: flex;
+            margin-top: 20px;
+        }
+        .main_bot .insert .cost_radio [type="radio"]{
+            width: 40px; height: 20px;
+            font-size: 30pt;
+        }
+        .main_bot .insert .cost_radio{
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+        .main_bot .insert .cost_bot .cost_insert{
+            width: 500px; height: 40px;
+            margin-bottom: 30px;
+        }
+        .main_bot .insert .text_bot .text_insert{
+            width: 500px; height: 300px;
+        }
+        
+        .main_bot .title{
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .main_bot .title .cost_title{
+            margin: 52px 35px 45px 0px;
+        }
+        input[type='text']{
+            font-size: 1.4rem;
+            border-radius: 5px;
+        }
+        .cost_insert{
+            text-align: end;
+        }
+        .text_insert{
+            vertical-align: top;
+        }
+        .button{
+            letter-spacing: 10px;
+            margin-top: 80px;
+            font-size: 3rem;
+            width: 100%;
+            height: 120px;
+        }
+        .button:hover{
+            background-color: #f2f2f2;
+        }

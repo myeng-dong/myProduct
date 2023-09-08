@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/btn/btn.css">
+    <style>
+    body{
+        background-color: #f2f2f2;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: ". main .";
+        grid-template-columns: 1fr 968px 1fr;
+    }
+    .main{
+        grid-area: main;
+        position: relative;
+        background-color: white;
+        border-radius: 16px;
+        margin: 50px 0 50px 0;
+        padding: 20px;
+    }
+    .main .title{
+       display: flex;
+       justify-content: center;
+       margin: 0px 450px 50px 50px;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .r_content{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin-left: 10px;
+    }
+    .r_content input{
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    .r_content input:nth-of-type(2){
+        height: 100px;
+        margin-bottom: 75px;
+    }
+    .l_content{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 1.4rem;
+    }
+    .button{
+        align-self: center;
+        font-size: 1.2rem;
+        margin: 5px 30px 20px 0;
+        
+    }
+    .l_content .pic{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 30px;
+    }
+    .l_content .pic img{
+        width: 150px;
+        height: 150px;
+    }
+    .l_content .email{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .l_content .phone{
+        margin-bottom: 40px;
+    }
+    .l_content .pw{
+        margin-bottom: 10px;
+    }
+    input{
+        font-size: 1.3rem;
+    }
+    .finally_btn{
+        display: flex;
+        justify-content: center;
+    }
+    .f_btn{
+        width: 300px;
+        height: 50px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="title"><h1>회원정보 수정</h1></div>
+            <div class="content">
+                <div class="l_content">
+                    <div class="pic"><img src="/iamge/도우미/줄서기.jpg" alt="">pic</div>
+                    <button class="button colorbutton">변 경</button>
+                    <div class="email">email :</div>
+                    <div class="pw">pw :</div>
+                    <div class="phone">phone :</div>
+                </div>
+                <div class="r_content">
+                    <input type="text" class="text_nickname" placeholder="별 명">
+                    <input type="text" class="text_introduce" placeholder="소 개 글">
+                    <input type="email" class="text_email">
+                    <input type="password" class="text_password">
+                    <input type="phone" class="text_phone">
+                </div>
+            </div>
+            <div class="finally_btn">
+                <button class="button borderbutton f_btn">수정완료</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

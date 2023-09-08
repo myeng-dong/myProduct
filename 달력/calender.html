@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>달력</title>
+    <link rel="stylesheet" href="./calender3.css">
+    <!-- <script src="./calender3.js"></script> -->
+    <script src="./calender.js"></script>
+    <link rel="stylesheet" href="./calender.css">
+</head>
+
+<body>
+    
+    <div class="main">
+            <!-- 체크박스 추가 -->
+            
+        <table class="Calendar">
+            <div class="check">
+                  <label>
+                    <input type="radio" name="radio" class="maples"  onClick="resetCalendar()"> 체크박스 1
+                  </label>
+                  <label>
+                    <input type="radio" name="radio" class="maples"  onClick="resetCalendar()"> 체크박스 2
+                  </label>
+                  <label>
+                    <input type="radio" name="radio" class="maple"  value="checkbox3"> 체크박스 3
+                  </label>
+            </div>
+            <thead>
+                <tr>
+                    <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
+                    <td colspan="5">
+                        <span id="calYear"></span>년
+                        <span id="calMonth"></span>월
+                    </td>
+                    <td onClick="nextCalendar();" style="cursor:pointer;">&#62;</td>
+                </tr>
+                <tr>
+                    <td>일</td>
+                    <td>월</td>
+                    <td>화</td>
+                    <td>수</td>
+                    <td>목</td>
+                    <td>금</td>
+                    <td>토</td>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

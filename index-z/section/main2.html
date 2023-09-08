@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1024px 1fr;
+            grid-template-areas: ". main2 ."
+
+        }
+        .main2{
+            grid-area: main2;
+        }
+        .main2 .section .information{
+            display: flex;
+            justify-content: space-around;
+        }
+        /* 제목 */
+        .main2 .section .main2_head{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .main2 .section .main2_head .allfind{
+            position: absolute;
+            top: 15px;
+            right: 10px;
+        }
+        /* 박스 */
+        .main2 .section .item{
+            border: .0625rem solid #f2f2f2;
+            background-color: #fafafa;
+            border-radius: 16px;
+            width: 430px;
+            height: 136px;
+            padding: 20px;
+        }
+        /* 이미지, 직업, 별명 부모박스 */
+        .main2 .section .item .box1{
+            display: flex;
+            position: relative;
+        }
+        /* 이미지 박스 */
+        .main2 .section .item .box1 .pic {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 0.75rem;
+            
+        }
+        /* 이미지 */
+        .main2 .section .item .box1 .pic img{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+        /* 소개글 */
+        .main2 .section .item .box2 p{
+            margin: 1rem 0 0.75rem;
+            height: 42px;
+        }
+        /* 경력 */
+        .main2 .section .item .box3 {
+            margin-top: 1rem;
+        }
+        /* 별명 */
+        .main2 .section .item .box1 .nickname{
+            font-size: 1.125rem;
+            font-weight: 1000;
+            margin-top: 0.125rem;
+        }
+        /* 직업 소개 경력 */
+        .main2 .section .item .box1 .job,
+        .main2 .section .item .box2 ,
+        .main2 .section .item .box3 {
+            font-size: 0.875rem;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="main2">
+            <div class="section">
+                <!-- 제목 : 하마찾기 -->
+                <div class="main2_head">
+                    <div class="title"><h2>하마찾기</h2></div>
+                    <div class="allfind"><h3>+전체보기</h3></div>
+                </div>
+                <div class="information">
+                    <!-- 박스 1 -->
+                    <div class="item">
+                        <div class="box1">
+                            <!-- 이미지 -->
+                            <div class="pic"><img src="/iamge/hand-s.jpg" alt=""></div>
+                            <!-- 직업, 별명 -->
+                            <div class="box1_head">
+                                <div class="job">우주하마 전문가</div>
+                                <div class="nickname">리얼하마 하마님</div>
+                            </div>
+                        </div>
+                        <!-- 소개글 -->
+                        <div class="box2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, atque culpa!.</p></div>
+                        <!-- 매칭,경력 -->
+                        <div class="box3">매칭10회 · 경력15년
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box1">
+                            <div class="pic"><img src="/iamge/hand-s.jpg" alt=""></div>
+                            <div class="box1_head">
+                                <div class="job">프로게이머</div>
+                                <div class="nickname">라일라이 하마님</div>
+                            </div>
+                        </div>
+                        <div class="box2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam numquam facilis. </p></div>
+                        <div class="box3">매칭2회
+                            · 경력15년
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

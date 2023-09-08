@@ -1,0 +1,45 @@
+/*
+확인요소.
+
+html에서 폰트.css 경로를 맞췄는지.
+자체 css에서 따로 폰트를 지정하지 않았는지.
+
+초기메인화면을 참고하여 본인 html에서 쓰일 글자 크기를 비교 후 html에서
+똑같은 태그로 지정해주기.
+ ex)  내 화면에서 이 부분의 글자 폰트와 초기화면의 서비스추천 글자와
+ 스타일을 똑같이 지정해주고 싶어! -> 태그를 h2로 지정해주기. 
+*/
+
+
+
+
+
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 헤더 */
+.header{
+    font-family: 'GowunBatang-Regular';
+    font-weight: bold;
+}
+
+/* 세부페이지_내용 */
+body{
+    font-family: 'RIDIBatang';
+    font-size: medium;
+}
+
+
+
